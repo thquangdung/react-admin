@@ -1,0 +1,53 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Post one",
+      "body": "This is the post body one",
+      "publishedAt": "1/5/2021"
+    },
+    {
+      "id": 2,
+      "title": "Post two",
+      "body": "This is the post body two",
+      "publishedAt": "2/5/2021"
+    },
+    {
+      "id": 3,
+      "title": "Post three",
+      "body": "This is the post body three",
+      "publishedAt": "3/5/2021"
+    },
+    {
+      "id": 4,
+      "title": "Post four",
+      "body": "This is the post body four",
+      "publishedAt": "3/5/2021"
+    },
+    {
+      "id": 5,
+      "title": "Post five",
+      "body": "This is the post body five",
+      "publishedAt": "5/5/2021"
+    },
+    {
+      "title": "Post six",
+      "body": "This is the post body six",
+      "publishedAt": "5/5/2021",
+      "id": 6
+    },
+    {
+      "title": "test post 1",
+      "body": "abc",
+      "publishedAt": "2021-05-05",
+      "id": 7
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Tifan Dung",
+      "email": "dungtpq@ecoe.vn"
+    }
+  ]
+}
