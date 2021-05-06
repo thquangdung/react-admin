@@ -2,6 +2,8 @@ import React from 'react';
 import { List, Datagrid, TextField, EditButton, DeleteButton, EmailField } from 'react-admin';
 
 const UserList = (props) => {
+    console.info("Test: ",props)
+    debugger
     return <List {...props}>
         <Datagrid>
             <TextField source='id' />
