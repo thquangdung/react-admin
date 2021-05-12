@@ -1,18 +1,31 @@
 import React from 'react';
 import { Admin, Resource } from 'react-admin';
-import restProvider from 'ra-data-simple-rest';
-import PostList from './components/PostList';
-import PostCreate from './components/PostCreate';
-import PostEdit from './components/PostEdit';
-import UserList from './components/UserList';
-import UserCreate from './components/UserCreate';
-import UserEdit from './components/UserEdit';
+import authProvider from './authProvider';
+import dataProvider from './dataProvider';
+import Dashboard from './Dashboard';
+
+import PostList from './components/posts/PostList';
+import PostCreate from './components/posts/PostCreate';
+import PostEdit from './components/posts/PostEdit';
+import PostShow from './components/posts/PostShow';
+
+import UserList from './components/users/UserList';
+import UserCreate from './components/users/UserCreate';
+import UserEdit from './components/users/UserEdit';
+
+import PostIcon from '@material-ui/icons/Book';
+import UserIcon from '@material-ui/icons/Group';
+
 
 function App() {
     return (
-        <Admin dataProvider={restProvider('http://localhost:3000')}>
-            <Resource name='posts' list={PostList} create={PostCreate} edit={PostEdit} />
-            <Resource name='users' list={UserList} create={UserCreate} edit={UserEdit} />
+        <Admin
+            authProvider={authProvider}
+            dashboard={Dashboard}
+            dataProvider={dataProvider}
+        >
+            <Resource name='posts' list={PostList} create={PostCreate} edit={PostEdit} icon={PostIcon} show={PostShow} />
+            <Resource name='users' list={UserList} create={UserCreate} edit={UserEdit} icon={UserIcon} />
         </Admin>
     );
 }
