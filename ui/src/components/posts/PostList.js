@@ -1,7 +1,9 @@
 import React from 'react';
-import { List, Datagrid, TextField, DateField, EditButton, DeleteButton, Filter, SearchInput } from 'react-admin';
+import { List, Datagrid, TextField, DateField, EditButton, DeleteButton, Filter, SearchInput, Pagination } from 'react-admin';
 import PostPagination from '../../MyPagination';
 
+
+// const PostPagination = props => <Pagination rowsPerPageOptions={[3, 6, 25]} {...props} />;
 
 const PostFilter = (props) => (
     <Filter {...props}>
